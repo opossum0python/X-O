@@ -8,7 +8,7 @@ def game():
     print(lines)
     eror = 'Ход невозможен, попробуйте еще раз!'
     while True:
-        if iters == 8:
+        if iters == 9:
             print('Ничья!')
             break
         print('Ход игрока под номером {}'.format((iters%2)+1))
@@ -129,7 +129,7 @@ def game():
         print(lines)
 while True:
     game()
-    x = input('Если не хотите больше играть введите "1"')
-    if x == 1:
+    x = input('Если не хотите больше играть введите "1": ')
+    if x == '1':
         break
 print('Спасобо за игру')
